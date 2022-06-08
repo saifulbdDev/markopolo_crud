@@ -1,0 +1,120 @@
+$primary-color: #eb6126;
+$white-color: #fff;
+$gray-color: #000;
+
+.wrapper {
+  min-height: 100vh;
+  max-height: 100%;
+  background: #f0f3f4;
+}
+.mr-2 {
+  margin-right: 8px;
+}
+.mr-3 {
+  margin-right: 10px;
+}
+.text-right {
+  text-align: right;
+}
+.header {
+  background: $white-color;
+}
+.nav-item {
+  .nav-link {
+    color: $gray-color;
+    &:hover {
+      color: $white-color;
+      background-color: $primary-color;
+    }
+  }
+}
+.footer {
+  text-align: center;
+}
+.ml-4 {
+  margin-left: 20px;
+}
+.alert-success {
+  text-align: center;
+}
+.alert-danger {
+  text-align: center;
+}
+
+.table {
+  background: $white-color;
+  thead {
+    button {
+      border: 0;
+      border-radius: none;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: inherit;
+      padding: 0.5em;
+      margin-bottom: 1px;
+      background: $white-color;
+    }
+    button.ascending {
+      &::after {
+        content: "👇";
+        display: inline-block;
+        margin-left: 1em;
+      }
+    }
+    button.descending {
+      &::after {
+        content: "☝️";
+        display: inline-block;
+        margin-left: 1em;
+      }
+    }
+  }
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+.theme-outline-btn {
+  color: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    color: $white-color;
+    background-color: $primary-color;
+  }
+}
+.theme-btn {
+  color: $white-color;
+  background-color: $primary-color;
+  &:hover {
+    color: $primary-color;
+    background-color: $white-color;
+  }
+}
+.btn-right {
+  margin-right: 5px;
+}
+.post_add {
+  text-align: right;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+.hide {
+  display: none;
+}
+.card-email {
+  font-size: 15px;
+  color: $primary-color;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.card-name {
+  font-size: 15px;
+  color: $gray-color;
+}
+.pagination {
+  margin-top: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $gray-color;
+  padding: 0.5rem;
+}
