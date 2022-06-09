@@ -69,7 +69,7 @@ export const Table = ({
 
   return (
     <>
-      <table className="table">
+      <table className=" table table-striped">
         <thead>
           <tr>
             {columns.map(
@@ -115,6 +115,7 @@ export const Table = ({
                       <input
                         key={`${column.value}-search`}
                         type="search"
+                        className="form-control"
                         placeholder={`Search ${column.name}`}
                         onChange={(event) =>
                           handleSearch(event.target.value, column.value)

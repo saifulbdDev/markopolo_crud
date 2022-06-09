@@ -167,7 +167,7 @@ const Posts = () => {
             </button>
           </div>
         </div>
-
+       
         {posts?.length && (
           <Table
             editHandle={editHandle}
